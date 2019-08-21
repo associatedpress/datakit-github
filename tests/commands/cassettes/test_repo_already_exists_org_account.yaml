@@ -1,0 +1,248 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - PyGithub/Python
+      authorization:
+      - DUMMY
+    method: GET
+    uri: https://api.github.com/user/orgs
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA62X7WrbMBSGb0X479Imjuu1KZQxSDc6cLuyho2NURRbcZQolpHkdEkp7DZ2e7uS
+        HTkfs1yHWMb/GuPnVaif8/rkx7PDeEwT59KJeJgtSKJCxrPI6Tg0ci4HnnfhdZyER+RRf3aC4fXq
+        bj5Yfe9/yPC3dBp9ZMvxbL4O1vEamEwwuGmqVCovu12c0tOYqmk2Pg35ostFLLvlUwRJuXy05Lo5
+        BeeRJXxhe3yDAT/lfG6P55T+D0mZEXt8gwG/IIsxEfYBW+65u/njBaLSbMxo+Ng00cSLwXiJFRbl
+        B5RflP3t080kESFPFDyL/EFn3dybd8urM/hqEZGhoKmiXFvmvHT+K/d5paY8+cQzkeSPUyvme97Z
+        ef+4cyNw7t4L4qsrAI/7Uz6qrncGZ++diVt7Z+LW3pl4A+/MgDa8MxPb9m4jT5V4ScZYUT2+JGJJ
+        ydPWugv/zPPd49bF7u0wcIP7mtYVTqkr3A6xd21PWmu2J60N25MN5NqzbXi1D2umVO9glW3MqFLK
+        eZgSxFOSIAkNFhK0e7ehBU1oEqOUYTXhYmF0HpaShxQrEqWCyF3rue5bf+D2jgt4/et2NvKDh/f1
+        au/1aXU9LJH2OpYDrK0sB1jLWQ5o4Gg5og1Vy5nNjHUPGrt1qVJZQ0XtLmEk1K/mvYiDnj8Y1BHR
+        D4Yj/66uiOWz6mpocPYSmri1giZuLaCJN9DPDGhDPjOxmXqH9z53Y0+lerotY44Z4hN0B+Zd78xD
+        VCLFUSgItCJScNuECqnQRBDSQbBQQlFOSSLpEj5KhZMIi4iuSdRBjCZzEiFJlE7duYygWDOmJIpg
+        TUXQwHnoKKFQuuiLglPkqTEIOhRui2Z6E8WMysV2Lej3ev3euXd+vJdvnoLhzdPtOvBqraOVJ9ad
+        idew/WBUZFhPR0WG9YhUZDSYk4qUNoalIrbZxBwu651hlSPzlfz9/UcQlMIrAzpajwce80zBFHCx
+        UoSB/zF6k3tuCK0vzKk6CRndmex7A/+tV6PYb9xgPXdvZ4HejY//sDKPqqtwgbJ3twhbS1uErW0t
+        wg00LeJt+FnMa13MrTCVYg43fqEThGHLzeIYjxnRVb2Adj4BK6HHOWe61uEKjmE31lWcCj6DdUO3
+        789/tzazUXoSAAA=
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2019 18:46:39 GMT
+      ETag:
+      - W/"f6153453e8455ef3f55031d134f82d15"
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Accepted-OAuth-Scopes:
+      - admin:org, read:org, repo, user, write:org
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v3; format=json
+      X-GitHub-Request-Id:
+      - F502:676D:7D1666:92C526:5D77EF8F
+      X-OAuth-Scopes:
+      - admin:org, admin:repo_hook, delete_repo, notifications, read:packages, repo,
+        write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4978'
+      X-RateLimit-Reset:
+      - '1568144666'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - PyGithub/Python
+      authorization:
+      - DUMMY
+    method: GET
+    uri: https://api.github.com/user
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA52UXW/aMBiF/0rkayAfa9kSqWqrVbuYxLSpdJp6g4xjEiPHjvwBoqj/fccJg8LF
+        pHCVxH7P48Pr97AnUldCkYK8WeebShuuyIiIkhSf8ixJRkTpki/CN5k9/Zr+/vNDsvXsdrZ+3KKO
+        bqijZuGNxH7tXGuLOO4XbTqphKv90ltumFaOKzdhuol93JHvN3c3IFTmwOiOwMIFqxUHTK8Fy8Zn
+        VmvXyAsD/bmd4Kx0paXUWxAuDf//kPiog73+XajqKgZ0+1i7mqNn+CnvoQHCuqGGOs0+Dg9cTaBY
+        XIPh5UBTBxUsbRXc7GPDW93h/NIyI1ontBpq7kwLljYVVeKNXsOC1gIRbA210Wmg5RsM3lBxL9rH
+        rREbynahJYYzLjZo8VXACzV4btdyTPwLxiA0XDi+oGUTorii0nIEjzah4Jmbkppofgon5rqlaoe9
+        B1ygWmlTrrU3ikphG7CWiHSfJalZ1/aAoSr6ZqhiwjI9ir4+htY0VITgnkLyUIWlkBxs18JwupQw
+        obyU4AqN4ickPjqdF0nOnDfcRPARYbKj54On6PvRVPTTaAS9mYDa+qUUbNFfT3Hz+bjSDTUpsvxf
+        yBBUUuTTD5nDJ3YZbDlcBHWwg3+SL+M0Gyf5PEmLbFokyStO8W35sSbNxyjL0nmWFOltkaav5P0v
+        yD0ixvsEAAA=
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2019 18:46:39 GMT
+      ETag:
+      - W/"566ed2d612496c35fdf0e7114d906425"
+      Last-Modified:
+      - Wed, 21 Aug 2019 20:15:11 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Accepted-OAuth-Scopes:
+      - ''
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v3; format=json
+      X-GitHub-Request-Id:
+      - F502:676D:7D1677:92C539:5D77EF8F
+      X-OAuth-Scopes:
+      - admin:org, admin:repo_hook, delete_repo, notifications, read:packages, repo,
+        write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4977'
+      X-RateLimit-Reset:
+      - '1568144666'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "fake-project", "private": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '42'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - PyGithub/Python
+      authorization:
+      - DUMMY
+    method: POST
+    uri: https://api.github.com/orgs/associatedpress/repos
+  response:
+    body:
+      string: '{"message":"Repository creation failed.","errors":[{"resource":"Repository","code":"custom","field":"name","message":"name
+        already exists on this account"}],"documentation_url":"https://developer.github.com/v3/repos/#create"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type
+      Content-Length:
+      - '225'
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2019 18:46:40 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Status:
+      - 422 Unprocessable Entity
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Accepted-OAuth-Scopes:
+      - public_repo, repo
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v3; format=json
+      X-GitHub-Request-Id:
+      - F502:676D:7D1689:92C557:5D77EF8F
+      X-OAuth-Scopes:
+      - admin:org, admin:repo_hook, delete_repo, notifications, read:packages, repo,
+        write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4976'
+      X-RateLimit-Reset:
+      - '1568144666'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 422
+      message: Unprocessable Entity
+version: 1

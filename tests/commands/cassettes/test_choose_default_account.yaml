@@ -1,0 +1,329 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - PyGithub/Python
+      authorization:
+      - DUMMY
+    method: GET
+    uri: https://api.github.com/user/orgs
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA62X7WrbMBSGb0X479Imjuu1KZQxSDc6cLuyho2NURRbcZQolpHkdEkp7DZ2e7uS
+        HTkfs1yHWMb/GuPnVaif8/rkx7PDeEwT59KJeJgtSKJCxrPI6Tg0ci4HnnfhdZyER+RRf3aC4fXq
+        bj5Yfe9/yPC3dBp9ZMvxbL4O1vEamEwwuGmqVCovu12c0tOYqmk2Pg35ostFLLvlUwRJuXy05Lo5
+        BeeRJXxhe3yDAT/lfG6P55T+D0mZEXt8gwG/IIsxEfYBW+65u/njBaLSbMxo+Ng00cSLwXiJFRbl
+        B5RflP3t080kESFPFDyL/EFn3dybd8urM/hqEZGhoKmiXFvmvHT+K/d5paY8+cQzkeSPUyvme97Z
+        ef+4cyNw7t4L4qsrAI/7Uz6qrncGZ++diVt7Z+LW3pl4A+/MgDa8MxPb9m4jT5V4ScZYUT2+JGJJ
+        ydPWugv/zPPd49bF7u0wcIP7mtYVTqkr3A6xd21PWmu2J60N25MN5NqzbXi1D2umVO9glW3MqFLK
+        eZgSxFOSIAkNFhK0e7ehBU1oEqOUYTXhYmF0HpaShxQrEqWCyF3rue5bf+D2jgt4/et2NvKDh/f1
+        au/1aXU9LJH2OpYDrK0sB1jLWQ5o4Gg5og1Vy5nNjHUPGrt1qVJZQ0XtLmEk1K/mvYiDnj8Y1BHR
+        D4Yj/66uiOWz6mpocPYSmri1giZuLaCJN9DPDGhDPjOxmXqH9z53Y0+lerotY44Z4hN0B+Zd78xD
+        VCLFUSgItCJScNuECqnQRBDSQbBQQlFOSSLpEj5KhZMIi4iuSdRBjCZzEiFJlE7duYygWDOmJIpg
+        TUXQwHnoKKFQuuiLglPkqTEIOhRui2Z6E8WMysV2Lej3ev3euXd+vJdvnoLhzdPtOvBqraOVJ9ad
+        idew/WBUZFhPR0WG9YhUZDSYk4qUNoalIrbZxBwu651hlSPzlfz9/UcQlMIrAzpajwce80zBFHCx
+        UoSB/zF6k3tuCK0vzKk6CRndmex7A/+tV6PYb9xgPXdvZ4HejY//sDKPqqtwgbJ3twhbS1uErW0t
+        wg00LeJt+FnMa13MrTCVYg43fqEThGHLzeIYjxnRVb2Adj4BK6HHOWe61uEKjmE31lWcCj6DdUO3
+        789/tzazUXoSAAA=
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2019 16:53:18 GMT
+      ETag:
+      - W/"f6153453e8455ef3f55031d134f82d15"
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Accepted-OAuth-Scopes:
+      - admin:org, read:org, repo, user, write:org
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v3; format=json
+      X-GitHub-Request-Id:
+      - F0C5:5348:6E18E6:81DC8B:5D77D4FE
+      X-OAuth-Scopes:
+      - admin:org, admin:repo_hook, delete_repo, notifications, read:packages, repo,
+        write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4999'
+      X-RateLimit-Reset:
+      - '1568137998'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - PyGithub/Python
+      authorization:
+      - DUMMY
+    method: GET
+    uri: https://api.github.com/user
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA52UXW/aMBiF/0rkayAfa9kSqWqrVbuYxLSpdJp6g4xjEiPHjvwBoqj/fccJg8LF
+        pHCVxH7P48Pr97AnUldCkYK8WeebShuuyIiIkhSf8ixJRkTpki/CN5k9/Zr+/vNDsvXsdrZ+3KKO
+        bqijZuGNxH7tXGuLOO4XbTqphKv90ltumFaOKzdhuol93JHvN3c3IFTmwOiOwMIFqxUHTK8Fy8Zn
+        VmvXyAsD/bmd4Kx0paXUWxAuDf//kPiog73+XajqKgZ0+1i7mqNn+CnvoQHCuqGGOs0+Dg9cTaBY
+        XIPh5UBTBxUsbRXc7GPDW93h/NIyI1ontBpq7kwLljYVVeKNXsOC1gIRbA210Wmg5RsM3lBxL9rH
+        rREbynahJYYzLjZo8VXACzV4btdyTPwLxiA0XDi+oGUTorii0nIEjzah4Jmbkppofgon5rqlaoe9
+        B1ygWmlTrrU3ikphG7CWiHSfJalZ1/aAoSr6ZqhiwjI9ir4+htY0VITgnkLyUIWlkBxs18JwupQw
+        obyU4AqN4ickPjqdF0nOnDfcRPARYbKj54On6PvRVPTTaAS9mYDa+qUUbNFfT3Hz+bjSDTUpsvxf
+        yBBUUuTTD5nDJ3YZbDlcBHWwg3+SL+M0Gyf5PEmLbFokyStO8W35sSbNxyjL0nmWFOltkaav5P0v
+        yD0ixvsEAAA=
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2019 16:53:18 GMT
+      ETag:
+      - W/"566ed2d612496c35fdf0e7114d906425"
+      Last-Modified:
+      - Wed, 21 Aug 2019 20:15:11 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Accepted-OAuth-Scopes:
+      - ''
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v3; format=json
+      X-GitHub-Request-Id:
+      - F0C5:5348:6E18F7:81DC9C:5D77D4FE
+      X-OAuth-Scopes:
+      - admin:org, admin:repo_hook, delete_repo, notifications, read:packages, repo,
+        write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4998'
+      X-RateLimit-Reset:
+      - '1568137998'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - PyGithub/Python
+      authorization:
+      - DUMMY
+    method: GET
+    uri: https://api.github.com/search/repositories?q=fake-project%2Buser%3Azstumgoren
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWKskvScyJT84vzStRsjLQUcrMS87PLchJLUmNL0otLs0pKVaySkvMKU4FSpWk
+        5gJ50bG1AMhF9bc3AAAA
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type
+      Cache-Control:
+      - no-cache
+      Content-Encoding:
+      - gzip
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2019 16:53:19 GMT
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Accepted-OAuth-Scopes:
+      - ''
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v3; format=json
+      X-GitHub-Request-Id:
+      - F0C6:7CF7:837B45:9B07AA:5D77D4FF
+      X-OAuth-Scopes:
+      - admin:org, admin:repo_hook, delete_repo, notifications, read:packages, repo,
+        write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '30'
+      X-RateLimit-Remaining:
+      - '29'
+      X-RateLimit-Reset:
+      - '1568134459'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"name": "fake-project", "private": true}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '41'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - PyGithub/Python
+      authorization:
+      - DUMMY
+    method: POST
+    uri: https://api.github.com/user/repos
+  response:
+    body:
+      string: '{"id":207614484,"node_id":"MDEwOlJlcG9zaXRvcnkyMDc2MTQ0ODQ=","name":"fake-project","full_name":"zstumgoren/fake-project","private":true,"owner":{"login":"zstumgoren","id":39200,"node_id":"MDQ6VXNlcjM5MjAw","avatar_url":"https://avatars1.githubusercontent.com/u/39200?v=4","gravatar_id":"","url":"https://api.github.com/users/zstumgoren","html_url":"https://github.com/zstumgoren","followers_url":"https://api.github.com/users/zstumgoren/followers","following_url":"https://api.github.com/users/zstumgoren/following{/other_user}","gists_url":"https://api.github.com/users/zstumgoren/gists{/gist_id}","starred_url":"https://api.github.com/users/zstumgoren/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/zstumgoren/subscriptions","organizations_url":"https://api.github.com/users/zstumgoren/orgs","repos_url":"https://api.github.com/users/zstumgoren/repos","events_url":"https://api.github.com/users/zstumgoren/events{/privacy}","received_events_url":"https://api.github.com/users/zstumgoren/received_events","type":"User","site_admin":false},"html_url":"https://github.com/zstumgoren/fake-project","description":null,"fork":false,"url":"https://api.github.com/repos/zstumgoren/fake-project","forks_url":"https://api.github.com/repos/zstumgoren/fake-project/forks","keys_url":"https://api.github.com/repos/zstumgoren/fake-project/keys{/key_id}","collaborators_url":"https://api.github.com/repos/zstumgoren/fake-project/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/zstumgoren/fake-project/teams","hooks_url":"https://api.github.com/repos/zstumgoren/fake-project/hooks","issue_events_url":"https://api.github.com/repos/zstumgoren/fake-project/issues/events{/number}","events_url":"https://api.github.com/repos/zstumgoren/fake-project/events","assignees_url":"https://api.github.com/repos/zstumgoren/fake-project/assignees{/user}","branches_url":"https://api.github.com/repos/zstumgoren/fake-project/branches{/branch}","tags_url":"https://api.github.com/repos/zstumgoren/fake-project/tags","blobs_url":"https://api.github.com/repos/zstumgoren/fake-project/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/zstumgoren/fake-project/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/zstumgoren/fake-project/git/refs{/sha}","trees_url":"https://api.github.com/repos/zstumgoren/fake-project/git/trees{/sha}","statuses_url":"https://api.github.com/repos/zstumgoren/fake-project/statuses/{sha}","languages_url":"https://api.github.com/repos/zstumgoren/fake-project/languages","stargazers_url":"https://api.github.com/repos/zstumgoren/fake-project/stargazers","contributors_url":"https://api.github.com/repos/zstumgoren/fake-project/contributors","subscribers_url":"https://api.github.com/repos/zstumgoren/fake-project/subscribers","subscription_url":"https://api.github.com/repos/zstumgoren/fake-project/subscription","commits_url":"https://api.github.com/repos/zstumgoren/fake-project/commits{/sha}","git_commits_url":"https://api.github.com/repos/zstumgoren/fake-project/git/commits{/sha}","comments_url":"https://api.github.com/repos/zstumgoren/fake-project/comments{/number}","issue_comment_url":"https://api.github.com/repos/zstumgoren/fake-project/issues/comments{/number}","contents_url":"https://api.github.com/repos/zstumgoren/fake-project/contents/{+path}","compare_url":"https://api.github.com/repos/zstumgoren/fake-project/compare/{base}...{head}","merges_url":"https://api.github.com/repos/zstumgoren/fake-project/merges","archive_url":"https://api.github.com/repos/zstumgoren/fake-project/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/zstumgoren/fake-project/downloads","issues_url":"https://api.github.com/repos/zstumgoren/fake-project/issues{/number}","pulls_url":"https://api.github.com/repos/zstumgoren/fake-project/pulls{/number}","milestones_url":"https://api.github.com/repos/zstumgoren/fake-project/milestones{/number}","notifications_url":"https://api.github.com/repos/zstumgoren/fake-project/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/zstumgoren/fake-project/labels{/name}","releases_url":"https://api.github.com/repos/zstumgoren/fake-project/releases{/id}","deployments_url":"https://api.github.com/repos/zstumgoren/fake-project/deployments","created_at":"2019-09-10T16:53:19Z","updated_at":"2019-09-10T16:53:19Z","pushed_at":"2019-09-10T16:53:20Z","git_url":"git://github.com/zstumgoren/fake-project.git","ssh_url":"git@github.com:zstumgoren/fake-project.git","clone_url":"https://github.com/zstumgoren/fake-project.git","svn_url":"https://github.com/zstumgoren/fake-project","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"forks":0,"open_issues":0,"watchers":0,"default_branch":"master","permissions":{"admin":true,"push":true,"pull":true},"allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"network_count":0,"subscribers_count":1}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Access-Control-Expose-Headers:
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
+        X-GitHub-Media-Type
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Content-Length:
+      - '5146'
+      Content-Security-Policy:
+      - default-src 'none'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Tue, 10 Sep 2019 16:53:20 GMT
+      ETag:
+      - '"a8373c57e3ed35b94942a5e55c20314d"'
+      Location:
+      - https://api.github.com/repos/zstumgoren/fake-project
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Server:
+      - GitHub.com
+      Status:
+      - 201 Created
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      X-Accepted-OAuth-Scopes:
+      - public_repo, repo
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-GitHub-Media-Type:
+      - github.v3; format=json
+      X-GitHub-Request-Id:
+      - F0C5:5348:6E1929:81DCAE:5D77D4FE
+      X-OAuth-Scopes:
+      - admin:org, admin:repo_hook, delete_repo, notifications, read:packages, repo,
+        write:discussion, write:packages
+      X-RateLimit-Limit:
+      - '5000'
+      X-RateLimit-Remaining:
+      - '4997'
+      X-RateLimit-Reset:
+      - '1568137998'
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 201
+      message: Created
+version: 1
