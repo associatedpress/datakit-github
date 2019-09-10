@@ -12,10 +12,14 @@ with open('HISTORY.rst') as history_file:
 requirements = [
     'cliff',
     'datakit-core',
+    'PyGithub',
 ]
 
 test_requirements = [
-    'pytest'
+    'flake8',
+    'pytest',
+    'vcrpy',
+    'pytest-vcr'
 ]
 
 setup(
@@ -34,6 +38,7 @@ setup(
     include_package_data=True,
     entry_points={
         'datakit.plugins': [
+            'github integrate=datakit_github.commands:Integrate',
         ]
     },
     install_requires=requirements,
@@ -41,7 +46,7 @@ setup(
     zip_safe=False,
     keywords='datakit-github',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 3 - Alpha',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: ISC License (ISCL)',
