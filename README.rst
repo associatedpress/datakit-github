@@ -28,7 +28,10 @@ Light-weight GitHub integration for datakit workflows.
 Features
 ========
 
-* TODO
+* Runs initial git commands to bootstrap a project (init/add/commit)
+* Creates GitHub project
+* Links local repo to newly created GitHub project
+* Pushes first commit to new GitHub project
 
 Quickstart
 ==========
