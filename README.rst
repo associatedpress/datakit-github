@@ -12,6 +12,11 @@
         :target: https://datakit-github.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
+===============================
+DataKit GitHub plugin
+===============================
+
+Commands to manage project integration with GitHub.
 
 Overview
 ========
@@ -19,7 +24,7 @@ Overview
 Light-weight GitHub integration for DataKit workflows.
 
 * Documentation: http://datakit-github.readthedocs.io/en/latest/
-* Github: https://github.com/associatedpress/datakit-github
+* GitHub: https://github.com/associatedpress/datakit-github
 * PyPI: https://pypi.python.org/pypi/datakit-github
 * Free and open source software: `ISC license`_
 
