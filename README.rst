@@ -16,7 +16,7 @@
 Overview
 ========
 
-Light-weight GitHub integration for datakit workflows.
+Light-weight GitHub integration for DataKit workflows.
 
 * Documentation: http://datakit-github.readthedocs.io/en/latest/
 * Github: https://github.com/associatedpress/datakit-github
