@@ -11,10 +11,26 @@ Subpackages
 Submodules
 ----------
 
-datakit_github.greet module
----------------------------
+datakit_github.github_api module
+--------------------------------
 
-.. automodule:: datakit_github.greet
+.. automodule:: datakit_github.github_api
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+datakit_github.project_mixin module
+-----------------------------------
+
+.. automodule:: datakit_github.project_mixin
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+datakit_github.repository module
+--------------------------------
+
+.. automodule:: datakit_github.repository
     :members:
     :undoc-members:
     :show-inheritance:
