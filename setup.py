@@ -5,7 +5,7 @@
 datakit-github
 ---------------
 
-This plugin provides light-weight GitHub integration for the `DataKit_ command-line tool <https::/datakit.ap.org>`_.
+This plugin provides light-weight GitHub integration for the `DataKit command-line tool <https://datakit.ap.org>`_.
 
 It's intended to streamline the process of generating a GitHub project and linking it to a local
 directory containing a newly created project skeleton.
