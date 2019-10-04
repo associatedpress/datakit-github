@@ -23,7 +23,7 @@ More information on the datakit-github plugin can be found below:
 
 """
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 requirements = [
     'cliff',
@@ -46,11 +46,7 @@ setup(
     author="Serdar Tumgoren",
     author_email='zstumgoren@gmail.com',
     url='https://github.com/associatedpress/datakit-github',
-    packages=[
-        'datakit_github',
-    ],
-    package_dir={'datakit_github':
-                 'datakit_github'},
+    packages=find_packages(),
     include_package_data=True,
     entry_points={
         'datakit.plugins': [
@@ -60,7 +56,7 @@ setup(
     install_requires=requirements,
     license="ISC license",
     zip_safe=False,
-    keywords='datakit-github',
+    keywords='datakit',
     classifiers=[
         'Development Status :: 4 - Beta',
         'Environment :: Console',
