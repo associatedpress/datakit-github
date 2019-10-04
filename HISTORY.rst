@@ -2,7 +2,7 @@
 History
 =======
 
-0.1.0 (YYYY-MM-DD)
+0.1.0 (2019-10-04)
 ------------------
 
-* TK
+* Initial release containing the GitHub "integrate" command.
