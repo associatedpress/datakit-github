@@ -40,7 +40,7 @@ test_requirements = [
 
 setup(
     name='datakit-github',
-    version='0.1.0',
+    version='0.1.1',
     description="Light-weight GitHub integration for datakit workflows.",
     long_description=__doc__,
     author="Serdar Tumgoren",
