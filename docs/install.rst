@@ -6,7 +6,21 @@ Installation
 Preliminary Git and GitHub setup
 --------------------------------
 
-First, some preliminary GitHub setup that will allow you to push and pull code securely:
+.. note::
+
+   Existing users of git/GitHub should be able to skip a number of steps
+   in this preliminary setup section.
+
+First, some preliminary git/GitHub setup that will allow you to push and pull code securely:
+
+* `Install git`_
+* Configure git user and email
+.. code::
+
+   # NOTE: Substitute your own name and email below!!
+   git config --global user.name "John Doe"
+   git config --global user.email johndoe@example.com
+
 
 * Create a `GitHub`_ account.
 * `Generate an ssh keypair`_ (if you haven't already)
@@ -58,9 +72,7 @@ Lastly, edit the newly created file so that it contains the below, replacing
 .. _`Add your ssh public key to GitHub`: https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
 .. _`personal GitHub API token`: https://github.com/settings/tokens
 .. _datakit-github: https://github.com/associatedpress/datakit-github
-
-
-
+.. _`Install git`: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 .. _DataKit: https://github.com/associatedpress/datakit-core
 .. _datakit-github docs: https://datakit-github.readthedocs.io/en/latest/
 .. _datakit-project: https://datakit-project.readthedocs.io/en/latest/
