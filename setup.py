@@ -43,6 +43,7 @@ setup(
     version='0.1.2',
     description="Light-weight GitHub integration for datakit workflows.",
     long_description=__doc__,
+    long_description_content_type='text/x-rst',
     author="Serdar Tumgoren",
     author_email='zstumgoren@gmail.com',
     url='https://github.com/associatedpress/datakit-github',
@@ -58,7 +59,7 @@ setup(
     zip_safe=False,
     keywords='datakit',
     classifiers=[
-        'Development Status :: 5 - Stable',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: ISC License (ISCL)',
