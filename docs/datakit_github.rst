@@ -1,45 +1,45 @@
-datakit_github package
-======================
+datakit\_github package
+=======================
 
 Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
-    datakit_github.commands
+   datakit_github.commands
 
 Submodules
 ----------
 
-datakit_github.github_api module
---------------------------------
+datakit\_github.github\_api module
+----------------------------------
 
 .. automodule:: datakit_github.github_api
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-datakit_github.project_mixin module
------------------------------------
+datakit\_github.project\_mixin module
+-------------------------------------
 
 .. automodule:: datakit_github.project_mixin
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-datakit_github.repository module
---------------------------------
+datakit\_github.repository module
+---------------------------------
 
 .. automodule:: datakit_github.repository
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------
 
 .. automodule:: datakit_github
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
