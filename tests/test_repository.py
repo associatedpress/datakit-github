@@ -52,7 +52,7 @@ def test_push():
         Repository.push()
         expected_calls = [
             (['git', 'commit', '-m', 'Initial commit'],),
-            (['git', 'push', '-u', 'origin', 'master'],)
+            (['git', 'push', '-u', 'origin', 'main'],)
         ]
         actual_calls = [call[1] for call in check_output.mock_calls]
         assert actual_calls == expected_calls
