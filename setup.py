@@ -40,9 +40,10 @@ test_requirements = [
 
 setup(
     name='datakit-github',
-    version='0.1.1',
+    version='0.1.2',
     description="Light-weight GitHub integration for datakit workflows.",
     long_description=__doc__,
+    long_description_content_type='text/x-rst',
     author="Serdar Tumgoren",
     author_email='zstumgoren@gmail.com',
     url='https://github.com/associatedpress/datakit-github',
@@ -58,7 +59,7 @@ setup(
     zip_safe=False,
     keywords='datakit',
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: ISC License (ISCL)',
@@ -67,7 +68,15 @@ setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    tests_require=test_requirements,
+    project_urls={
+        "Documentation": "http://datakit-github.readthedocs.io/en/latest/",
+        "Maintainer": "https://github.com/associatedpress",
+        "Source": "https://github.com/associatedpress/datakit-github",
+        "Tracker": "https://github.com/associatedpress/datakit-github/issues"
+    },
 )

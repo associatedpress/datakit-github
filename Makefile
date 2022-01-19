@@ -74,15 +74,13 @@ servedocs: docs ## compile the docs watching for changes
 	watchmedo shell-command -p '*.rst' -c '$(MAKE) -C docs html' -R -D .
 
 check-release: ## check release for potential errors
-	python setup.py check -r -s
+	twine check dist/*
 
-test-release: clean ## release distros to test.pypi.org
-	python setup.py sdist upload -r https://test.pypi.org/legacy/
-	python setup.py bdist_wheel upload -r https://test.pypi.org/legacy/
+test-release: clean dist ## release distros to test.pypi.org
+	twine upload -r testpypi dist/*
 
-release: clean ## package and upload a release
-	python setup.py sdist upload
-	python setup.py bdist_wheel upload
+release: clean dist ## package and upload a release
+	twine upload -r pypi dist/*
 
 dist: clean ## builds source and wheel package
 	python setup.py sdist
