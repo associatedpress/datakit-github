@@ -25,5 +25,5 @@ class Repository:
         return subprocess.check_output(['git', 'remote', 'add', name, repo_url])
 
     @staticmethod
-    def push(remote='origin', branch='master'):
+    def push(remote='origin', branch='main'):
         return subprocess.check_output(['git', 'push', '-u', remote, branch])
