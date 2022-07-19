@@ -49,9 +49,11 @@ def test_push():
     patch_target = 'datakit_github.repository.subprocess.check_output'
     with mock.patch(patch_target) as check_output:
         Repository.commit('Initial commit')
+        Repository.rename_current_branch('main')
         Repository.push()
         expected_calls = [
             (['git', 'commit', '-m', 'Initial commit'],),
+            (['git', 'branch', '--move', 'main'],),
             (['git', 'push', '-u', 'origin', 'main'],)
         ]
         actual_calls = [call[1] for call in check_output.mock_calls]

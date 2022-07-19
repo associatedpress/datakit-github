@@ -32,10 +32,9 @@ requirements = [
 ]
 
 test_requirements = [
-    'flake8',
-    'pytest',
-    'vcrpy',
-    'pytest-vcr'
+    'flake8==4.0.1',
+    'pytest==7.1.2',
+    'pytest-vcr==1.0.2'
 ]
 
 setup(
