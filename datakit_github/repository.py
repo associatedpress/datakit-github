@@ -25,5 +25,9 @@ class Repository:
         return subprocess.check_output(['git', 'remote', 'add', name, repo_url])
 
     @staticmethod
+    def rename_current_branch(new_name):
+        return subprocess.check_output(['git', 'branch', '--move', new_name])
+
+    @staticmethod
     def push(remote='origin', branch='main'):
         return subprocess.check_output(['git', 'push', '-u', remote, branch])
