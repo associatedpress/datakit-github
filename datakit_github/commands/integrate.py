@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 from cliff.command import Command
 from github.GithubException import GithubException
 from datakit_github.github_api import GithubApi
@@ -14,6 +15,10 @@ class Integrate(ProjectMixin, Command):
     "Integrate local project code with Github"
 
     def take_action(self, parsed_args):
+        if os.listdir() == ['.git'] or not bool(os.listdir()):
+            msg = "ERROR: Project is empty, nothing to commit"
+            self.log.info(msg)
+            return
         # Check for Github API key from configs
         # TODO: Provide more helpful error message on how to create API key
         # and configure plugin locally
