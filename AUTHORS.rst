@@ -10,4 +10,6 @@ Development Lead
 Contributors
 ------------
 
-None yet. Why not be the first?
+* Justin Myers <jmyers@ap.org>
+
+* Larry Fenn <lfenn@ap.org>
