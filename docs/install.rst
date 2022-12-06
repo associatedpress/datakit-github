@@ -15,6 +15,7 @@ First, some preliminary git/GitHub setup that will allow you to push and pull co
 
 * `Install git`_
 * Configure git user and email
+
 .. code::
 
    # NOTE: Substitute your own name and email below!!
