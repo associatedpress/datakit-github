@@ -9,6 +9,6 @@ coverage==6.4.2
 # https://github.com/sphinx-doc/sphinx/issues/3212
 docutils==0.12
 Sphinx==1.4.8
-pytest==7.1.2
+pytest==9.0.3
 pytest-vcr==1.0.2
 twine==4.0.1

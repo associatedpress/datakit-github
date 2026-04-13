@@ -33,7 +33,7 @@ requirements = [
 
 test_requirements = [
     'flake8==4.0.1',
-    'pytest==7.1.2',
+    'pytest==9.0.3',
     'pytest-vcr==1.0.2'
 ]
 
