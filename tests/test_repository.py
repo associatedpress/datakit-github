@@ -45,7 +45,6 @@ def test_add_remote():
     'stage_files'
 )
 def test_push():
-    repo_url = 'git@github.com:associatedpress/datakit-github.git'
     patch_target = 'datakit_github.repository.subprocess.check_output'
     with mock.patch(patch_target) as check_output:
         Repository.commit('Initial commit')

@@ -21,7 +21,7 @@ def test_config_missing_error(caplog):
 @pytest.mark.vcr()
 @pytest.mark.usefixtures('create_readme')
 def test_choose_default_account(caplog, plugin_dir):
-    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y', 'y']) as mocked, \
+    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y', 'y']), \
         mock.patch('datakit_github.commands.integrate.Repository.push', return_value=None) as repo_push:
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
         cmd = Integrate(None, None, cmd_name='github integrate')
@@ -38,8 +38,8 @@ def test_choose_default_account(caplog, plugin_dir):
 @pytest.mark.vcr()
 @pytest.mark.usefixtures('create_readme')
 def test_choose_org_account_private_error(caplog, plugin_dir):
-    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['3','y','y']) as mocked, \
-        mock.patch('datakit_github.commands.integrate.Repository.push', return_value=None) as repo_push:
+    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['3','y','y']), \
+        mock.patch('datakit_github.commands.integrate.Repository.push', return_value=None):
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
         cmd = Integrate(None, None, cmd_name='github integrate')
         parsed_args = mock.Mock()
@@ -53,7 +53,7 @@ def test_choose_org_account_private_error(caplog, plugin_dir):
 @pytest.mark.vcr()
 @pytest.mark.usefixtures('create_readme')
 def test_choose_org_account_public_repo(caplog, plugin_dir):
-    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['3','y','n']) as mocked, \
+    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['3','y','n']), \
         mock.patch('datakit_github.commands.integrate.Repository.push', return_value=None) as repo_push:
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
         cmd = Integrate(None, None, cmd_name='github integrate')
@@ -69,7 +69,7 @@ def test_choose_org_account_public_repo(caplog, plugin_dir):
 
 @pytest.mark.vcr()
 def test_repo_already_exists_org_account(caplog, plugin_dir):
-    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['3','y', 'n']) as mocked:
+    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['3','y', 'n']):
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
         cmd = Integrate(None, None, cmd_name='github integrate')
         parsed_args = mock.Mock()
@@ -79,7 +79,7 @@ def test_repo_already_exists_org_account(caplog, plugin_dir):
 
 @pytest.mark.vcr()
 def test_repo_already_exists(caplog, plugin_dir):
-    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y', 'y']) as mocked:
+    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y', 'y']):
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
         cmd = Integrate(None, None, cmd_name='github integrate')
         parsed_args = mock.Mock()
@@ -91,7 +91,7 @@ def test_repo_already_exists(caplog, plugin_dir):
 @pytest.mark.vcr()
 @pytest.mark.usefixtures('init_repo')
 def test_repo_already_initialized(caplog, plugin_dir):
-    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y','y']) as mocked:
+    with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y','y']):
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
         cmd = Integrate(None, None, cmd_name='github integrate')
         parsed_args = mock.Mock()

@@ -1,9 +1,8 @@
 import os
-import shutil
 import subprocess
 
 import pytest
-from datakit.utils import makedirs, mkdir_p, write_json
+from datakit.utils import mkdir_p, write_json
 
 from datakit_github.github_api import GithubApi
 from datakit_github.repository import Repository
