@@ -5,9 +5,6 @@
 .. image:: https://img.shields.io/pypi/pyversions/datakit-github.svg
         :target: https://pypi.python.org/pypi/datakit-github
 
-.. image:: https://img.shields.io/travis/associatedpress/datakit-github.svg
-        :target: https://travis-ci.org/associatedpress/datakit-github
-
 .. image:: https://readthedocs.org/projects/datakit-github/badge/?version=latest
         :target: https://datakit-github.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status

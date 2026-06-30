@@ -5,11 +5,11 @@ Credits
 Development Lead
 ----------------
 
-* Serdar Tumgoren <zstumgoren@gmail.com>
-
+* Larry Fenn <lfenn@ap.org>
+  
 Contributors
 ------------
 
 * Justin Myers <jmyers@ap.org>
 
-* Larry Fenn <lfenn@ap.org>
+* Serdar Tumgoren <zstumgoren@gmail.com>
