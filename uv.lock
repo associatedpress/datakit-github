@@ -492,19 +492,19 @@ wheels = [
 
 [[package]]
 name = "datakit-core"
-version = "0.3.2"
+version = "0.5.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "cliff" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/12/2a/80b23bcd58d36717e4ef13cd899f59b71e07b44cb83875231c1ca8bd3cb3/datakit-core-0.3.2.tar.gz", hash = "sha256:22deb6aa7cb2588301c7771b80b111c9d5a0bffe7fb9a1fd04e1971de6486ff4", size = 20114, upload-time = "2022-12-12T20:12:51.492Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/a2/ed/395ef179286e051668b15da29f979c728ce7f6977970b6275f248a059024/datakit_core-0.5.1.tar.gz", hash = "sha256:0656a22b05d405a4731993b8ab480eef88e5ca5bbb78e1cc55bfb490ddbee02c", size = 9262, upload-time = "2026-07-06T17:01:18.937Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a8/15/7a895fd1ed1b259f55f04f68d98232f224d9294f6c4e280b29a1b59e4083/datakit_core-0.3.2-py3-none-any.whl", hash = "sha256:6a1db826ae8807c46cc64dae563f6922c55ff3d903890989a76999302d7f21df", size = 8105, upload-time = "2022-12-12T20:12:46.975Z" },
+    { url = "https://files.pythonhosted.org/packages/d0/7e/ebc1e87827b43711e9fb50e0549401f3ed63ea7e726f5c0920c7bc861fa6/datakit_core-0.5.1-py3-none-any.whl", hash = "sha256:2a505787eecb0ecaf1bd80d4d354a264a872c0a773a59b6f416c297fa595670a", size = 12296, upload-time = "2026-07-06T17:01:18.143Z" },
 ]
 
 [[package]]
 name = "datakit-github"
-version = "0.2.1"
+version = "0.3.0"
 source = { editable = "." }
 dependencies = [
     { name = "cliff" },
@@ -530,7 +530,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "cliff" },
-    { name = "datakit-core", specifier = ">=0.3.0" },
+    { name = "datakit-core", specifier = ">=0.5.0" },
     { name = "pygithub" },
 ]
 
@@ -586,7 +586,7 @@ name = "exceptiongroup"
 version = "1.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "typing-extensions", marker = "python_full_version < '3.13'" },
+    { name = "typing-extensions", marker = "python_full_version < '3.11'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/50/79/66800aadf48771f6b62f7eb014e352e5d06856655206165d775e675a02c9/exceptiongroup-1.3.1.tar.gz", hash = "sha256:8b412432c6055b0b7d14c310000ae93352ed6754f70fa8f7c34141f91c4e3219", size = 30371, upload-time = "2025-11-21T23:01:54.787Z" }
 wheels = [
