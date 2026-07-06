@@ -20,11 +20,12 @@ class Integrate(ProjectMixin, Command):
             self.log.info(msg)
             return
         # Check for Github API key from configs
-        # TODO: Provide more helpful error message on how to create API key
-        # and configure plugin locally
         api_key = self.configs.get('github_api_key')
         if not api_key:
-            err_msg = "You must configure a Github API key to use this command!!\n"
+            err_msg = (
+                "You must configure a Github API key to use this command!!\n"
+                "Run `datakit config init datakit-github` to set it up.\n"
+            )
             self.log.error(err_msg)
         elif Repository.initialized():
             self.log.error("\nERROR: Repo has already been initialized locally!!")

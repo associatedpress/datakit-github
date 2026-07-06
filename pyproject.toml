@@ -22,7 +22,7 @@ classifiers = [
 ]
 dependencies = [
     "cliff",
-    "datakit-core>=0.3.0",
+    "datakit-core>=0.5.0",
     "PyGithub",
 ]
 
