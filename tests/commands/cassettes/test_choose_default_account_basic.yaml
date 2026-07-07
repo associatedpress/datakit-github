@@ -21,13 +21,10 @@ interactions:
       Access-Control-Allow-Origin:
       - '*'
       Access-Control-Expose-Headers:
-      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
-        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
-        X-GitHub-Media-Type
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
       Cache-Control:
       - private, max-age=60, s-maxage=60
-      Content-Length:
-      - '2'
       Content-Security-Policy:
       - default-src 'none'
       Content-Type:
@@ -87,26 +84,15 @@ interactions:
     uri: https://api.github.com/user
   response:
     body:
-      string: !!binary |
-        H4sIAAAAAAAAA52TTWvjMBCG/4vOSeSPTcMall56TaHQLEsvQZYVe1pZEtLYJWv633dkJy0JhcU5
-        2RrN++jVaGZg2tZgWMGqN8AlqoDKswWDihXruyTfZOvNghlbqX0Mse3D093vP49avu6y7cM2377u
-        ckoXvUDh953XlNMgulBwPgVDuqoBm67sgvLSGlQGV9K2vOPnA+77Xz8IUvsTZjyJAlc4ByfSJCdc
-        4JeuG2z1lYnp7FFxmXuwWtt3Yly7/s8x/FNIDqd/MPVtEBIO3GKjqHR0nY9YBAg429IoGnj80DNF
-        TKDn8Kqaa+skI1PvhvwM3CtnR15XBunBIVgz296FmGDW18LAX3ETjMSBGNHYbCOjiMSqpyacrZ5U
-        A3ceeiGPsSxeSQU91fk24pWcgHh0ipp/R90Qqw6o9qJq44AehA6KRlG0lGA6rReMmtoJczwvSxrl
-        aXC0lWNxzzuqFUCTOaka8EqU+pNSgj1vua7UIPdTmYpkwU6Bsb9YDHw1/9eKunjck8RFqoVAcpEl
-        6c9lmiyT9DldF0leZOsXulHnqm9y8ucsLfKkSDcv7OMfekQVLZMEAAA=
+      string: '{"login":"dkit-tester","id":56037257,"node_id":"MDQ6VXNlcjU2MDM3MjU3","avatar_url":"https://avatars1.githubusercontent.com/u/56037257?v=4","gravatar_id":"","url":"https://api.github.com/users/dkit-tester","html_url":"https://github.com/dkit-tester","followers_url":"https://api.github.com/users/dkit-tester/followers","following_url":"https://api.github.com/users/dkit-tester/following{/other_user}","gists_url":"https://api.github.com/users/dkit-tester/gists{/gist_id}","starred_url":"https://api.github.com/users/dkit-tester/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dkit-tester/subscriptions","organizations_url":"https://api.github.com/users/dkit-tester/orgs","repos_url":"https://api.github.com/users/dkit-tester/repos","events_url":"https://api.github.com/users/dkit-tester/events{/privacy}","received_events_url":"https://api.github.com/users/dkit-tester/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"public_repos":0,"public_gists":0,"followers":0,"following":0,"created_at":"2019-10-01T15:03:25Z","updated_at":"2019-10-03T21:30:17Z"}'
     headers:
       Access-Control-Allow-Origin:
       - '*'
       Access-Control-Expose-Headers:
-      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
-        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
-        X-GitHub-Media-Type
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
       Cache-Control:
       - private, max-age=60, s-maxage=60
-      Content-Encoding:
-      - gzip
       Content-Security-Policy:
       - default-src 'none'
       Content-Type:
@@ -179,13 +165,10 @@ interactions:
       Access-Control-Allow-Origin:
       - '*'
       Access-Control-Expose-Headers:
-      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
-        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval,
-        X-GitHub-Media-Type
+      - ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
       Cache-Control:
       - private, max-age=60, s-maxage=60
-      Content-Length:
-      - '5211'
       Content-Security-Policy:
       - default-src 'none'
       Content-Type:

@@ -12,6 +12,7 @@ from datakit_github.repository import Repository
 def vcr_config():
     return {
         'filter_headers': [('authorization', 'DUMMY')],
+        'decode_compressed_response': True,
     }
 
 def create_gh_project(project_slug):
