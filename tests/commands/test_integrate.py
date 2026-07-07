@@ -10,8 +10,9 @@ from datakit_github.commands import Integrate
 TOKEN = os.environ.get('DATAKIT_GITHUB_ACCESS_TOKEN', 'DUMMY')
 
 
+@pytest.mark.usefixtures('create_readme')
 def test_config_missing_error(caplog):
-    cmd = Integrate(None, None, cmd_name='github integrate')
+    cmd = Integrate(None, None)
     parsed_args = mock.Mock()
     cmd.run(parsed_args)
     err_msg = "You must configure a Github API key to use this command!!"
@@ -24,7 +25,7 @@ def test_choose_default_account(caplog, plugin_dir):
     with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y', 'y']), \
         mock.patch('datakit_github.commands.integrate.Repository.push', return_value=None) as repo_push:
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
-        cmd = Integrate(None, None, cmd_name='github integrate')
+        cmd = Integrate(None, None)
         parsed_args = mock.Mock()
         cmd.run(parsed_args)
         assert "(1) zstumgoren" in caplog.text
@@ -41,7 +42,7 @@ def test_choose_org_account_private_error(caplog, plugin_dir):
     with mock.patch('datakit_github.commands.integrate.ask', side_effect=['3','y','y']), \
         mock.patch('datakit_github.commands.integrate.Repository.push', return_value=None):
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
-        cmd = Integrate(None, None, cmd_name='github integrate')
+        cmd = Integrate(None, None)
         parsed_args = mock.Mock()
         cmd.run(parsed_args)
         assert "(1) zstumgoren" in caplog.text
@@ -56,7 +57,7 @@ def test_choose_org_account_public_repo(caplog, plugin_dir):
     with mock.patch('datakit_github.commands.integrate.ask', side_effect=['3','y','n']), \
         mock.patch('datakit_github.commands.integrate.Repository.push', return_value=None) as repo_push:
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
-        cmd = Integrate(None, None, cmd_name='github integrate')
+        cmd = Integrate(None, None)
         parsed_args = mock.Mock()
         cmd.run(parsed_args)
         assert "(1) zstumgoren" in caplog.text
@@ -68,20 +69,22 @@ def test_choose_org_account_public_repo(caplog, plugin_dir):
 
 
 @pytest.mark.vcr()
+@pytest.mark.usefixtures('create_readme')
 def test_repo_already_exists_org_account(caplog, plugin_dir):
     with mock.patch('datakit_github.commands.integrate.ask', side_effect=['3','y', 'n']):
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
-        cmd = Integrate(None, None, cmd_name='github integrate')
+        cmd = Integrate(None, None)
         parsed_args = mock.Mock()
         cmd.run(parsed_args)
         assert "ERROR: Failed to create fake-project for associatedpress: name already exists on this account" in caplog.text
 
 
 @pytest.mark.vcr()
+@pytest.mark.usefixtures('create_readme')
 def test_repo_already_exists(caplog, plugin_dir):
     with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y', 'y']):
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
-        cmd = Integrate(None, None, cmd_name='github integrate')
+        cmd = Integrate(None, None)
         parsed_args = mock.Mock()
         cmd.run(parsed_args)
         assert "(1) zstumgoren" in caplog.text
@@ -89,11 +92,11 @@ def test_repo_already_exists(caplog, plugin_dir):
 
 
 @pytest.mark.vcr()
-@pytest.mark.usefixtures('init_repo')
+@pytest.mark.usefixtures('create_readme', 'init_repo')
 def test_repo_already_initialized(caplog, plugin_dir):
     with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y','y']):
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
-        cmd = Integrate(None, None, cmd_name='github integrate')
+        cmd = Integrate(None, None)
         parsed_args = mock.Mock()
         cmd.run(parsed_args)
         assert "Repo has already been initialized locally!!" in caplog.text

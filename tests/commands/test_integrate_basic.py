@@ -16,7 +16,7 @@ def test_choose_default_account_basic(caplog, plugin_dir):
     with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y', 'y']), \
         mock.patch('datakit_github.commands.integrate.Repository.push', return_value=None) as repo_push:
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
-        cmd = Integrate(None, None, cmd_name='github integrate')
+        cmd = Integrate(None, None)
         parsed_args = mock.Mock()
         cmd.run(parsed_args)
         assert "Repo will be created on account: dkit-tester" in caplog.text
@@ -31,7 +31,7 @@ def test_return_chosen_inputs(plugin_dir):
     with mock.patch('datakit_github.commands.integrate.ask', side_effect=['','y', 'y']), \
         mock.patch('datakit_github.commands.integrate.Repository.push', return_value=None):
         create_plugin_config(plugin_dir, {'github_api_key': TOKEN})
-        cmd = Integrate(None, None, cmd_name='github integrate')
+        cmd = Integrate(None, None)
         parsed_args = mock.Mock()
         choices = cmd.run(parsed_args)
         assert choices['repo_name'] == 'fake-project'
