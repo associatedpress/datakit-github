@@ -57,12 +57,11 @@ class Integrate(ProjectMixin, Command):
                         error_msg
                         )
                     self.log.error(msg)
-                finally:
-                    return {
-                        'account': account.login,
-                        'repo_name': self.project_slug,
-                        'private_repo': privacy
-                    }
+                return {
+                    'account': account.login,
+                    'repo_name': self.project_slug,
+                    'private_repo': privacy
+                }
 
     def choose_account(self, api_key):
         accounts = GithubApi.accounts(api_key)
