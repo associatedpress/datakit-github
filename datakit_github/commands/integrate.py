@@ -102,7 +102,7 @@ class Integrate(ProjectMixin, Command):
         Repository.init()
         Repository.add()
         Repository.commit("Initial commit")
-        Repository.rename_current_branch("main")
+        Repository.rename_current_branch(Repository.default_branch())
         Repository.add_remote(repo.ssh_url)
         alert_msg = 'Local repo linked to remote origin: \n\t{}'.format(repo.html_url)
         self.log.info(alert_msg)

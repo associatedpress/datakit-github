@@ -1,5 +1,6 @@
 import os
 import re
+import subprocess
 from unittest import mock
 
 import pytest
@@ -49,7 +50,7 @@ def test_push():
     with mock.patch(patch_target) as check_output:
         Repository.commit('Initial commit')
         Repository.rename_current_branch('main')
-        Repository.push()
+        Repository.push(branch='main')
         expected_calls = [
             (['git', 'commit', '-m', 'Initial commit'],),
             (['git', 'branch', '--move', 'main'],),
@@ -57,3 +58,27 @@ def test_push():
         ]
         actual_calls = [call[1] for call in check_output.mock_calls]
         assert actual_calls == expected_calls
+
+
+def test_default_branch_from_config():
+    patch_target = 'datakit_github.repository.subprocess.check_output'
+    with mock.patch(patch_target) as check_output:
+        check_output.return_value = b'trunk\n'
+        assert Repository.default_branch() == 'trunk'
+        check_output.assert_called_once_with(['git', 'config', 'init.defaultBranch'])
+
+
+def test_default_branch_falls_back_to_main():
+    patch_target = 'datakit_github.repository.subprocess.check_output'
+    with mock.patch(patch_target) as check_output:
+        # git exits non-zero when init.defaultBranch is unset
+        check_output.side_effect = subprocess.CalledProcessError(1, 'git')
+        assert Repository.default_branch() == 'main'
+
+
+def test_push_uses_default_branch():
+    patch_target = 'datakit_github.repository.subprocess.check_output'
+    with mock.patch(patch_target) as check_output:
+        check_output.return_value = b'trunk\n'
+        Repository.push()
+        check_output.assert_any_call(['git', 'push', '-u', 'origin', 'trunk'])
