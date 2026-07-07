@@ -5,9 +5,29 @@ import pytest
 
 from ..conftest import create_plugin_config
 from datakit_github.commands import Integrate
+from datakit_github.commands.integrate import ask
 
 
 TOKEN = os.environ.get('DATAKIT_GITHUB_ACCESS_TOKEN', 'DUMMY')
+
+
+def test_ask_wraps_input():
+    with mock.patch('builtins.input', return_value='answer') as mocked_input:
+        assert ask("prompt: ") == 'answer'
+    mocked_input.assert_called_once_with("prompt: ")
+
+
+def test_empty_project_aborts(caplog):
+    cmd = Integrate(None, None)
+    cmd.run(mock.Mock())
+    assert "Project is empty, nothing to commit" in caplog.text
+
+
+@pytest.mark.usefixtures('init_repo')
+def test_bare_git_dir_project_aborts(caplog):
+    cmd = Integrate(None, None)
+    cmd.run(mock.Mock())
+    assert "Project is empty, nothing to commit" in caplog.text
 
 
 @pytest.mark.usefixtures('create_readme')
