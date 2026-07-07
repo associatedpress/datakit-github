@@ -31,11 +31,17 @@ First, some preliminary git/GitHub setup that will allow you to push and pull co
 Install DataKit libraries
 --------------------------
 
-Next, install the core DataKit_ library and the datakit-project_ and datakit-github_ plugins:
+Next, install the core DataKit_ library together with the datakit-project_ and
+datakit-github_ plugins. The recommended way is with uv_, which keeps the
+``datakit`` command and its plugins in a single isolated environment:
 
 .. code::
 
-   pip install --user datakit-core datakit-project datakit-github
+   uv tool install datakit-core --with datakit-project --with datakit-github
+
+If you don't have uv, see its `installation docs
+<https://docs.astral.sh/uv/getting-started/installation/>`_. See the DataKit_
+docs for other ways to install and combine plugins.
 
 
 Generate GitHub API token
@@ -47,25 +53,25 @@ This will enable datakit to automate interactions with the GitHub API (e.g. to a
 Add API token to config
 -----------------------
 
-With the API token in hand, store it in the configuration file for the *datakit-github* plugin.
-This file must be located inside the home directory for datakit configurations.
+With the API token in hand, store it using the generic ``datakit config`` command
+family that ships with datakit-core_. Set the ``github_api_key`` value — because
+it's a secret, you'll be prompted for it and your input stays hidden::
 
-On Mac/Linux systems, you should create `~/.datakit/plugins/datakit-github/config.json` file with
-the below commands::
+   $ datakit config set datakit-github github_api_key
 
-  # First ensure the plugin directory exists
-  mkdir -p ~/.datakit/plugins/datakit-github/
-  # Create a blank configuration file
-  touch ~/.datakit/plugins/datakit-github/config.json
+Alternatively, fill in every unset value for the plugin interactively::
 
-Lastly, edit the newly created file so that it contains the below, replacing
-`GITHUB_API_TOKEN` with your actual key::
+   $ datakit config init datakit-github
 
-   {"github_api_key": "GITHUB_API_TOKEN"}
+You can confirm the token is stored, and that it actually authenticates, with::
+
+   $ datakit config list datakit-github
+   $ datakit config verify datakit-github
 
 .. note::
 
-   Please be sure to avoid extraneous white space and preserve the double quotes. This must be valid JSON!!
+   ``datakit config`` writes ``~/.datakit/plugins/datakit-github/config.json``
+   for you, so there's no need to create or hand-edit that file.
 
 
 .. _GitHub: https://github.com
@@ -75,5 +81,7 @@ Lastly, edit the newly created file so that it contains the below, replacing
 .. _datakit-github: https://github.com/associatedpress/datakit-github
 .. _`Install git`: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 .. _DataKit: https://github.com/associatedpress/datakit-core
+.. _datakit-core: https://datakit-core.readthedocs.io/en/latest/
+.. _uv: https://docs.astral.sh/uv/
 .. _datakit-github docs: https://datakit-github.readthedocs.io/en/latest/
 .. _datakit-project: https://datakit-project.readthedocs.io/en/latest/
