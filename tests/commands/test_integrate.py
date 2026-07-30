@@ -3,10 +3,10 @@ from unittest import mock
 
 import pytest
 
-from ..conftest import create_plugin_config
 from datakit_github.commands import Integrate
 from datakit_github.commands.integrate import ask
 
+from ..conftest import create_plugin_config
 
 TOKEN = os.environ.get('DATAKIT_GITHUB_ACCESS_TOKEN', 'DUMMY')
 

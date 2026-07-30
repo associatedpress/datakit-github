@@ -4,7 +4,6 @@ import pytest
 
 from datakit_github.github_api import GithubApi
 
-
 TOKEN = os.environ.get('DATAKIT_GITHUB_ACCESS_TOKEN', 'DUMMY')
 
 

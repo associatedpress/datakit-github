@@ -76,7 +76,9 @@ def create_plugin_config(plugin_dir, content):
     return content
 
 
-def create_project_config(project_root, contents={}):
+def create_project_config(project_root, contents=None):
+    if contents is None:
+        contents = {}
     config_dir = os.path.join(project_root, 'config')
     mkdir_p(config_dir)
     project_config = os.path.join(config_dir, 'datakit-github.json')
@@ -95,7 +97,7 @@ def dir_contents(path):
 
 def read_fixture(name):
     tests_dir = os.path.dirname(__file__)
-    fixture_pth = os.path.join(tests_dir, "fixtures/{}.json".format(name))
+    fixture_pth = os.path.join(tests_dir, f"fixtures/{name}.json")
     with open(fixture_pth, 'r') as fh:
         return fh.read()
 

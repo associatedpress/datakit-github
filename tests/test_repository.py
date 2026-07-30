@@ -4,10 +4,10 @@ import subprocess
 from unittest import mock
 
 import pytest
-from .conftest import repo_status, repo_log
 
 from datakit_github.repository import Repository
 
+from .conftest import repo_log, repo_status
 
 CHECK_OUTPUT = 'datakit_github.repository.subprocess.check_output'
 

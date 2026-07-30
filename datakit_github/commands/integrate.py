@@ -1,10 +1,11 @@
-# -*- coding: utf-8 -*-
 import os
+
 from cliff.command import Command
 from github.GithubException import GithubException
+
 from datakit_github.github_api import GithubApi
-from datakit_github.repository import Repository
 from datakit_github.project_mixin import ProjectMixin
+from datakit_github.repository import Repository
 
 
 def ask(question):
@@ -41,21 +42,17 @@ class Integrate(ProjectMixin, Command):
                 # TODO: Handle overrides for project settings from
                 # configs and/or command-line flags (e.g. privacy)
                 privacy_choice = ask("Should this repo be private? y/n [y]: ").strip().lower()
-                privacy = True if privacy_choice in ['', 'y'] else False
+                privacy = privacy_choice in ['', 'y']
                 try:
                     repo = account.create_repo(self.project_slug, private=privacy)
-                    self.log.info("Repo created at {}".format(repo.html_url))
+                    self.log.info(f"Repo created at {repo.html_url}")
                     self.run_local_git_commands(repo)
                 except GithubException as err:
                     try:
                         error_msg = err.data['errors'][0]['message']
                     except KeyError:
                         error_msg = err.data['message']
-                    msg = "\nERROR: Failed to create {} for {}: {}!!\n".format(
-                        self.project_slug,
-                        account.login,
-                        error_msg
-                        )
+                    msg = f"\nERROR: Failed to create {self.project_slug} for {account.login}: {error_msg}!!\n"
                     self.log.error(msg)
                 return {
                     'account': account.login,
@@ -74,11 +71,11 @@ class Integrate(ProjectMixin, Command):
             for idx, account in enumerate(accounts):
                 num = idx + 1
                 account_lkup[num] = account
-                self.log.info("({}) {}".format(num, account.login))
+                self.log.info(f"({num}) {account.login}")
             # TODO: Check plugin for default account configuration,
             # otherwise default to personal account
             default = account_lkup[1]
-            choice_msg = "\nType a number or leave blank for default [{}]: ".format(default.login)
+            choice_msg = f"\nType a number or leave blank for default [{default.login}]: "
             choice = ask(choice_msg)
             if choice.strip() == '':
                 target_account = default
@@ -87,7 +84,7 @@ class Integrate(ProjectMixin, Command):
         return target_account
 
     def confirm_account_choice(self, target_account):
-        self.log.info("Repo will be created on account: {}".format(target_account.login))
+        self.log.info(f"Repo will be created on account: {target_account.login}")
         choice = ask("Is this correct? y/n [y]: ").strip().lower()
         return choice
 
@@ -103,8 +100,8 @@ class Integrate(ProjectMixin, Command):
         Repository.commit("Initial commit")
         Repository.rename_current_branch(Repository.default_branch())
         Repository.add_remote(repo.ssh_url)
-        alert_msg = 'Local repo linked to remote origin: \n\t{}'.format(repo.html_url)
+        alert_msg = f'Local repo linked to remote origin: \n\t{repo.html_url}'
         self.log.info(alert_msg)
         Repository.push()
         self.log.info("First commit made locally and pushed to remote")
-        self.log.info("View the project on Github at {}".format(repo.html_url))
+        self.log.info(f"View the project on Github at {repo.html_url}")

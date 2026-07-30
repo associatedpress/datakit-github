@@ -1,7 +1,6 @@
-# -*- coding: utf-8 -*-
 import logging
 import os
-
+from typing import ClassVar
 
 from datakit import CommandHelpers, ConfigField
 
@@ -12,7 +11,7 @@ class ProjectMixin(CommandHelpers):
 
     plugin_slug = 'datakit-github'
 
-    config_spec = [
+    config_spec: ClassVar[list[ConfigField]] = [
         ConfigField(
             'github_api_key',
             required=True,
